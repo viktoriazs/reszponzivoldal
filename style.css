@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    color: rgb(0, 0, 0);
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+ 
+
+}
+
+div {
+    border: 1px solid gray;
+    padding: 5px;
+}
+
+
+img{
+    width: 100%;
+}
+
+#nav {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr 1fr;
+    border-style: solid;
+    border-width: 1px;
+    background-color: gray;
+    padding:0%;
+
+}
+
+#nav li {
+    list-style-type: none;
+    border-right-style: solid;
+    border-left-style:solid ;
+    border-width: 1px;
+    padding: 10px 30px;
+    padding-top: 20px;
+
+}
+
+#doboz {
+    border-right-style: solid;
+    background-color: red;
+    color: aliceblue;
+}
+
+#doboz a:link {
+    color: white;
+    text-decoration: none;
+}
+#doboz a:hover {
+    color: blue;
+}
+
+
+#mdoboz {
+    border-left-style:solid ;
+}
+
+#mdoboz a:link {
+    color: red;
+    text-decoration: none;
+}
+
+#mdoboz a:hover {
+    color: white;
+    background-color: red;
+} 
+
+
+.nagykep {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.kiskep {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+@media only screen and (max-width: 500px){
+    #nav{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .menu ul li:nth-child(2){
+        display:none;
+    }
+
+    .kiskep {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+}
